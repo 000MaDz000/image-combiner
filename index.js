@@ -91,10 +91,10 @@ function splitToChunks(paths) {
     // split the images names array to array of arrays, every nested array contains maximum 12 img path
     // and ensure the image path is png or jpeg or jpg
     let result = new Array();
-
     let resultPointer = 0;
     for (let i in paths) {
-        if (!paths[i].endsWith(".png") && !paths[i].endsWith(".jpeg") && !paths[i].endsWith(".jpg")) {
+        const path = paths[i].toLowerCase();
+        if (!path.endsWith(".png") && !path.endsWith(".jpeg") && !path.endsWith(".jpg")) {
             continue;
         }
 

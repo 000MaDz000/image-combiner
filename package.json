@@ -1,11 +1,11 @@
 {
   "dependencies": {
+    "colors": "^1.4.0",
     "jimp": "^0.22.12"
   },
   "name": "image-combiner",
   "version": "1.0.0",
   "main": "index.js",
-  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
